@@ -1,5 +1,6 @@
 import flask
 app = flask.Flask(__name__)
+wsgi_app = app.wsgi_app
 app.config["DEBUG"] = True
 
 @app.route('/', methods=['GET'])
